@@ -14,6 +14,7 @@ app.use(express.json());
 //routes
 app.use('/', require('./routes/RutasWeb'));
 app.use('/api', require('./routes/movies'));
+app.use('/api', require('./routes/users'));
 
 //server
 app.listen(PORT, () => {
